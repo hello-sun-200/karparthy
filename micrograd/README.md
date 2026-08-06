@@ -17,11 +17,18 @@
 
 - 官方仓库：https://github.com/karpathy/micrograd
 - 讲义：`lecture1-3.pdf`（微积分/反向传播基础）
+- **`reference/`** — 官方完整代码（已拉取本地作为对照）：
+  - `micrograd/engine.py` — 官方 Value 类实现（94 行）
+  - `micrograd/nn.py` — Neuron / Layer / MLP
+  - `demo.ipynb` — 训练演示（notebook）
+  - `trace_graph.ipynb` — graphviz 计算图可视化
+  - `test/test_engine.py` — 官方测试
 
 ## 本目录文件
 
 | 文件 | 说明 |
 |------|------|
+| `reference/` | 官方源码（对照参考，勿修改） |
 | `engine.py` | 我自己的实现（Value 类，自动求导引擎） |
 | `nn.py` | Neuron / Layer / MLP |
 | `train.py` | 训练一个二元分类器 |
